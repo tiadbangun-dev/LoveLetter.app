@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="theme-color" content="#1a1a2e">
+    <title>💌 Love Letter - Siap Screenshot</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loading" class="loading">
+        <div class="heart-loader">
+            <i class="fas fa-heart"></i>
+            <p>Memuat cinta...</p>
+        </div>
+    </div>
+
+    <!-- Stars Background -->
+    <div class="stars-container">
+        <div class="stars"></div>
+        <div class="stars2"></div>
+        <div class="stars3"></div>
+    </div>
+
+    <!-- Page 1: Write Letter -->
+    <div id="page1" class="page active">
+        <div class="header">
+            <h1 class="title">💌 Love Letter</h1>
+            <p class="subtitle">Tulis surat cinta untuk pasangan paling bucin ✨</p>
+        </div>
+
+        <div class="diary-container">
+            <div class="diary">
+                <div class="diary-header">
+                    <div class="ribbon">
+                        <i class="fas fa-heart"></i> Diary Cinta <i class="fas fa-heart"></i>
+                    </div>
+                </div>
+                <textarea id="loveLetter" 
+                    placeholder="Tulis cintamu disini... 💕&#10;&#10;❤️ 😘 🌹 ✨&#10;Maksimal 1500 karakter"
+                    maxlength="1500"></textarea>
+                <div class="char-counter">
+                    <span id="charCount">0</span>/1500
+                </div>
+            </div>
+        </div>
+
+        <div class="action-buttons">
+            <button id="generateBtn" class="btn-primary btn-full">
+                <i class="fas fa-magic"></i> Generate Siap Screenshot
+            </button>
+        </div>
+
+        <div class="footer">
+            <p>💕 Dibuat untuk pasangan kamu yang perfect</p>
+        </div>
+    </div>
+
+    <!-- Page 2: Screenshot Ready -->
+    <div id="page2" class="page">
+        <div class="header">
+            <button id="backBtn" class="back-btn">
+                <i class="fas fa-arrow-left"></i>
+            </button>
+            <h1 class="title">📸 Siap Screenshot!</h1>
+        </div>
+
+        <div id="sharePages" class="share-pages"></div>
+
+        <div class="action-buttons">
+            <button id="newLetterBtn" class="btn-secondary btn-full">
+                <i class="fas fa-edit"></i> Tulis Baru
+            </button>
+            <button id="screenshotBtn" class="btn-primary btn-full">
+                <i class="fas fa-camera"></i> Cara Screenshot
+            </button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
